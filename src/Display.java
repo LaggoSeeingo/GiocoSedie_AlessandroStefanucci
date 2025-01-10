@@ -1,12 +1,19 @@
+/**
+     * @author Alessandro Stefanucci
+     */
 
 class Display extends Thread
 
 {
-	private Posto sedie[];
-	private boolean endgame;
-
+	private Posto sedie[]; // sedie array che contiene i posti occupabili dai partecipanti
+	private boolean endgame; //valore booleano utile a capire se lo stato di tutte le celle dell'array sedie[] sono stati stampati
+        
+        /**
+         * 
+         * @param sedie numero massimo di posti, pari al numero di partecipanti -1
+         */
+        
 	public Display(Posto sedie[]) {
-
 
 		this.sedie = new Posto[sedie.length];
 
