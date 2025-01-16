@@ -8,14 +8,20 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author MC
- * @version 12/01/23
+ * @author Alessandro Stefanucci
+ * @version 16/01/2025
  */
 
 public class Scrittore implements Runnable{
 
     String nomeFile;
     String contenuto;
+    
+    /**
+ *
+ * @param nomeFile nome del file in cui scrivere
+ * @param contenuto stringa da scrivere nel file 
+ */
     
     public Scrittore(String nomeFile, String contenuto){
         this.nomeFile = nomeFile;
@@ -40,7 +46,6 @@ public class Scrittore implements Runnable{
             //2) scrivo nel buffer
             br.write(contenuto);
             br.write("\n\r");
-            br.newLine();
             //3) svuoto il buffer e salvo nel file i dati
             br.flush();         
         } catch (IOException ex) {
