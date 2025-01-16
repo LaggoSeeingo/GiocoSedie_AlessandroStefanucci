@@ -1,3 +1,6 @@
+/**
+     * @author Alessandro Stefanucci
+     */
 
 class Partecipante extends Thread
 
@@ -19,6 +22,10 @@ class Partecipante extends Thread
 				if (sedie[i].occupa()) {
 					System.out.println("Sono il Thread " + this.getName()
 							+ ". Sono riuscito a sedermi sul posto " + i);
+                                        
+                                        Scrittore scrittore = new Scrittore("Risultato.txt", "Posto " + i + " occupato dal thread " + this.getName());
+
+                                        scrittore.scrivi();
 					return;
 				}
 			}

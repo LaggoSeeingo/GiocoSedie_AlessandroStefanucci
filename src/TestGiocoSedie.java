@@ -5,6 +5,8 @@
  */
 
 import java.util.logging.Logger;
+import java.io.File;
+
 
 /**
  *
@@ -35,6 +37,11 @@ public class TestGiocoSedie {
                 logger.info("Sto facendo partire il thread id: " + array[i].getId()+" name: "+array[i].getName()+"\n");
                 array[i].start();
                 }
+        
+            File file = new File("Risultato.txt");
+            file.delete();
+        
+        
 	}
     }
  

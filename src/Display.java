@@ -17,10 +17,11 @@ class Display extends Thread
 
 		this.sedie = new Posto[sedie.length];
 
-		for (int s = 0; s < sedie.length; s++)
+		for(int s = 0; s < sedie.length; s++)
 			this.sedie[s] = sedie[s];
 	}
 
+        @Override
 	public void run() {
 
 		try {
