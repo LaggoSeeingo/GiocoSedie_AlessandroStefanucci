@@ -1,5 +1,7 @@
 /**
      * @author Alessandro Stefanucci
+     * @version 16/01/2025
+     * 
      */
 
 class Display extends Thread
@@ -22,6 +24,12 @@ class Display extends Thread
 	}
 
         @Override
+        
+     /**
+     * Stampa una visualizzazione grafica dei posti occupati e di quelli liberi
+     *
+     */
+        
 	public void run() {
 
 		try {

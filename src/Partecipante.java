@@ -1,5 +1,7 @@
 /**
      * @author Alessandro Stefanucci
+     * @version 16/01/2025
+     * 
      */
 
 class Partecipante extends Thread
@@ -14,6 +16,11 @@ class Partecipante extends Thread
 	}
 
         @Override
+        /**
+        * Gestisce l'esecuzione del singolo thread, verificando tramite i metodi "occupa()" e "libero()" della classe Posto, inoltre richiama il metodo "scrivi()" della classe Scrittore
+        *
+        */
+        
 	public void run() {
 
 		try {
@@ -37,4 +44,6 @@ class Partecipante extends Thread
 			throw new RuntimeException(e);
 		}
 	}
+
+        
 }

@@ -10,7 +10,9 @@ import java.io.File;
 
 /**
  *
- * @author MC
+ * @author Alessandro Stefanucci
+ * @version 16/01/2025
+ * 
  */
 public class TestGiocoSedie {
     private final static int NUMSEDIE = 15;
@@ -18,6 +20,8 @@ public class TestGiocoSedie {
     
     /**
      * @param args the command line arguments
+     * Metodo main della classe di avvio, gestisce l'avvio dei Thread e dell'array dei posti, inoltre stampa il log dell'esecuzione
+     * 
      */
     public static void main(String[] args) {
         Posto sedie[] = new Posto[NUMSEDIE];
@@ -43,5 +47,6 @@ public class TestGiocoSedie {
         
         
 	}
+
     }
  

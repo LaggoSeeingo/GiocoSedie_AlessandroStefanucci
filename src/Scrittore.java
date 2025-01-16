@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  * @version 16/01/2025
  */
 
-public class Scrittore implements Runnable{
+public class Scrittore{
 
     String nomeFile;
     String contenuto;
@@ -27,15 +27,12 @@ public class Scrittore implements Runnable{
         this.nomeFile = nomeFile;
         this.contenuto = contenuto;
     }
-    
-    @Override
-    public void run() {
-        scrivi();
-    }
-    /**
-     * Scrive un file di testo usando la classe BufferedWriter
+
+     /**
+     * Scrive un file di testo "Risultato.txt" usando la classe BufferedWriter
      *
      */
+    
     public void scrivi(){
         BufferedWriter br=null;
         
@@ -62,4 +59,6 @@ public class Scrittore implements Runnable{
                 
         }
     }
+
+    
 }
