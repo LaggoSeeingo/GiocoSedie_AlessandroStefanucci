@@ -13,6 +13,7 @@ class Partecipante extends Thread
 
 	}
 
+        @Override
 	public void run() {
 
 		try {
@@ -23,7 +24,7 @@ class Partecipante extends Thread
 					System.out.println("Sono il Thread " + this.getName()
 							+ ". Sono riuscito a sedermi sul posto " + i);
                                         
-                                        Scrittore scrittore = new Scrittore("Risultato.txt", "Posto " + i + " occupato dal thread " + this.getName());
+                                        Scrittore scrittore = new Scrittore("Risultato.txt", "Posto " + i + " occupato dal thread di nome: " + this.getName() + " e con id: " + this.getId());
 
                                         scrittore.scrivi();
 					return;
